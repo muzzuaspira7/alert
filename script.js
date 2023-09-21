@@ -72,22 +72,22 @@ button.addEventListener("click", ()=>{
 
 userName.addEventListener("focus",()=>{
     NameErr.innerHTML= "Enter Your Name"
-        NameErr.style.color="white"       
+        NameErr.style.color="#2f2c2c"       
 })
 
 email.addEventListener("focus",()=>{
     EmailErr.innerHTML= "Enter Email Address"
-    EmailErr.style.color="white"       
+    EmailErr.style.color="#2f2c2c"       
 })
 
 CreatePass.addEventListener("focus",()=>{
     PassErr1.innerHTML= "Create New Password"
-    PassErr1.style.color="white"       
+    PassErr1.style.color="#2f2c2c"       
 })
 
 ConfirmPassword.addEventListener("focus",()=>{
     PassErr2.innerHTML= "Confirm Password"
-    PassErr2.style.color="white"       
+    PassErr2.style.color="#2f2c2c"       
 })
 
 

@@ -4,56 +4,79 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(./bg.jpeg);
+    background-image: url(./images/bg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
 .Container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     align-items: center;
     height: 80vh;
-
-
-   
+    flex-wrap: wrap;
+}
+img{
+    height: 55vh;
 }
 .form{
     background-color:transparent;
     border: 1px solid rgba(255, 255, 255, 0.183);
     border-radius: 2px;
-    width: 350px;
+    width: 500px;
     height: 50vh;
     backdrop-filter: blur(100px);
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center; */
     padding: 15px;
-    /* margin: auto; */
     line-height: 30px;
+    box-shadow: 0px 1px 10px 1px;
+    border-radius: 25px;
     
 }
 #Submit{
     text-align: center;
-    width: 80px;
+    width: 100px;
     height: 27px;
     margin: 10px 110px;
 }
 input{
     width: 90%;
-    height: 20px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 2px 10px 1px;
+    outline: none;
+}
+::placeholder{
+    padding-left: 10px;
 }
 p{
-    color: white;
+    color: #2f2c2c;
+}
+#title h1{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
 }
 
+
+@media (max-width:1000px) {
+    body{
+        height: 200vh;
+    }
+}
+@media (max-width:550px) {
+   .Container img{
+        display: none;
+    }
+}
 @media (max-width:400px) {
     .form{
-        width: 300px;
+        width: 400px;
     }
     #Submit{
         text-align: center;
@@ -61,4 +84,29 @@ p{
         height: 27px;
         margin: 10px 92px;
     }
+}
+
+@media (max-width:390px) {
+    #Submit{
+        margin: 10px 75px;
+        font-size: 11px;
+    }
+    .form{
+        margin: 20px;
+    }
+    body {
+        height: 100vh;
+    }
+
+}
+
+@media (max-width:350px) {
+    #Submit{
+        margin: 10px 75px;
+        font-size: 11px;
+    }
+    body {
+        height: 100vh;
+    }
+
 }
