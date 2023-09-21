@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    height: 80vh;
+
+
+   
+}
+.form{
+    background-color:transparent;
+    border: 1px solid rgba(255, 255, 255, 0.183);
+    border-radius: 2px;
+    width: 350px;
+    height: 50vh;
+    backdrop-filter: blur(100px);
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    padding: 15px;
+    /* margin: auto; */
+    line-height: 30px;
+    
+}
+#Submit{
+    text-align: center;
+    width: 80px;
+    height: 27px;
+    margin: 10px 110px;
+}
+input{
+    width: 90%;
+    height: 20px;
+}
+p{
+    color: white;
+}
+
+@media (max-width:400px) {
+    .form{
+        width: 300px;
+    }
+    #Submit{
+        text-align: center;
+        width: 80px;
+        height: 27px;
+        margin: 10px 92px;
+    }
+}
